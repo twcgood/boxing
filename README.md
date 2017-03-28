@@ -24,16 +24,7 @@ UI version: contain UI implements base on core version.
 add library
 
 ```
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-
-dependencies {
-	        compile 'com.github.twcgood:boxing:v1.0'
-	}                     		
+                   		
 ```
 
 ### Preview

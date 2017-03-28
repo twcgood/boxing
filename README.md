@@ -21,38 +21,19 @@ UI version: contain UI implements base on core version.
 
 - Maven
 
-Core version
+add library
 
-```xml
-<dependency>                       
-  	<groupId>com.bilibili</groupId>  
-  	<artifactId>boxing</artifactId>  
-  	<version>0.4.0</version>
-  	<type>pom</type>                
-</dependency>                      		
 ```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 
-UI version
-
-```xml
-<dependency>                          
-  	<groupId>com.bilibili</groupId>     
-  	<artifactId>boxing-impl</artifactId>
-  	<version>0.4.0</version>   
-  	<type>pom</type>                    
-</dependency>                         
-```
-
-- Gradle
-
-Core version              
-```java
-compile 'com.bilibili:boxing:0.4.0'
-```
-
-UI version
-```java
-compile 'com.bilibili:boxing-impl:0.4.0'
+dependencies {
+	        compile 'com.github.twcgood:boxing:v1.0'
+	}                     		
 ```
 
 ### Preview
